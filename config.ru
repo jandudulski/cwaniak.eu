@@ -1,0 +1,3 @@
+require './cwaniak'
+
+run Cwaniak
