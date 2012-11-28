@@ -53,7 +53,6 @@ task :deploy => :environment do
     # instance of your project.
     invoke :'git:clone'
     invoke :'deploy:link_shared_paths'
-    invoke :'bundle:install'
 
     to :launch do
       queue 'touch tmp/restart.txt'
